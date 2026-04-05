@@ -22,3 +22,4 @@ antenna_data_*
 !requirements.txt
 setup.py
 Output/
+skrypt_inno.iss
