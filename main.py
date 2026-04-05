@@ -661,8 +661,12 @@ class MainWindow(QMainWindow):
             return
 
         user_lat, user_lon = self.worker.location
-        map_ = folium.Map(location=[user_lat, user_lon], zoom_start=12)
-
+        # map_ = folium.Map(location=[user_lat, user_lon], zoom_start=12)
+        map_ = folium.Map(
+            location=[user_lat, user_lon],
+            zoom_start=12,
+            tiles='CartoDB positron'
+        )
         folium.Marker(
             [user_lat, user_lon],
             tooltip="Podany adres",
