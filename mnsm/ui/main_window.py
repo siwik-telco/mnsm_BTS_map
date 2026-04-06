@@ -103,6 +103,7 @@ class MainWindow(QMainWindow):
         filtered_df = getattr(self._worker, 'filtered_df', pd.DataFrame())
         if filtered_df.empty:
             self.status_label.setText("Brak nadajników do pobrania PDF.")
+            logging.error("No BTSs in base")
             return
         station_ids = filtered_df['StationId'].unique()
         self.pdf_progress_bar.setVisible(True)
@@ -118,10 +119,12 @@ class MainWindow(QMainWindow):
         self.pdf_progress_bar.setVisible(False)
         if not extracted_data:
             self.status_label.setText("Nie udało się pobrać lub przetworzyć PDF-ów.")
+            logging.error("Operation on PDFs unsuccesful!")
             return
         self.status_label.setText("PDF-y zostały pobrane i przetworzone pomyślnie.")
         QMessageBox.information(self, "Sukces",
             "PDF-y zostały pobrane i przetworzone.\nDane zostały zapisane do plików CSV.")
+        logging.info("Opeartion finished - on_pdf_done!")
 
     def _on_clear_map(self) -> None:
         self.map_view.setHtml("")
