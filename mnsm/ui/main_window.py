@@ -17,7 +17,7 @@ from mnsm.workers.pdf_worker import PdfWorker
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("MNSM by Merituum")
+        self.setWindowTitle("MNSM by siwik-telco")
         self.setGeometry(100, 100, 800, 800)
         self.setWindowIcon(QIcon("ikona.ico"))
         self._worker = None
