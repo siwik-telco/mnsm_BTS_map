@@ -1,0 +1,7 @@
+PyQt5
+PyQtWebEngine
+folium
+pandas
+requests
+geopy
+pdfplumber

@@ -1,0 +1,25 @@
+.vscode
+btsearch.csv
+linie.kmz
+localisations.csv
+api.py
+__pycache__
+__pycache__/
+pdfs/
+dist/
+dist
+build/
+build
+linie.kmz
+# images
+main.spec
+pdfs_downloaded/
+downloaded_files/
+antenna_data.csv
+extracted_texts/
+antenna_data_*
+*.txt
+!requirements.txt
+setup.py
+Output/
+skrypt_inno.iss
