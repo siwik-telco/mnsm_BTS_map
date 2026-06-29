@@ -169,6 +169,10 @@ python main.py
 
 ---
 
+## Interface with example location
+![Example](Images/Example_station.png)
+
+
 ## External Data Sources
 
 | Source | Usage |
