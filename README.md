@@ -170,8 +170,11 @@ python main.py
 ---
 
 ## Interface with example location
+| Without Azymuth Displaying |
 ![Example](Images/Example_station.png)
 
+|With Azymuth Displaying |
+![Examplewithazymuths](Images/azymuths.png)
 
 ## External Data Sources
 
